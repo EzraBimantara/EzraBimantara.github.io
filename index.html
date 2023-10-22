@@ -242,6 +242,9 @@
     </div>
     <button class="btn btn-orange w-100 rounded-0">Submit</button>
 </form>
+<div class="alert alert-success mt-3 d-none" id="successMessage">
+  Form has been submitted successfully!
+</div>
 
 
     </div>
@@ -275,6 +278,7 @@
   });
 /* Validasi Form */
 const form = document.querySelector('form');
+const successMessage = document.getElementById('successMessage');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -339,7 +343,11 @@ form.addEventListener('submit', function(event) {
 
   // Jika semua field valid, submit form
   if (allFieldsValid) {
-    form.submit();
+    successMessage.classList.remove('d-none');
+    setTimeout(function() {
+      successMessage.classList.add('d-none');
+    }, 2000);
+
   }
 });
 
