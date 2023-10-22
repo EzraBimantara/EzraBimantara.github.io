@@ -358,7 +358,7 @@ $(document).ready(function(){
   });
 
   // Efek Fade saat scroll
-  $(window).on('scroll', function() {
+$(window).on('scroll', function() {
   $('.fade-element').each(function() {
     if (isScrolledIntoView(this) && !$(this).hasClass('fade-in')) {
       $(this).addClass('fade-in');
@@ -376,6 +376,7 @@ function isScrolledIntoView(elem) {
   var elemBottom = elemTop + $(elem).height();
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+
 
 });
 
