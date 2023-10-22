@@ -1,0 +1,129 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*Variable*/
+:root {
+    --primary-color: #f02206;
+    --dark-color: #0F0F0F;
+    --gray-color: rgb(148, 143, 143);
+
+    --h1-font-size: 40px;
+    --h2-font-size: 30px;
+    --small-font-size: 12px;
+}
+
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Global CSS*/
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange {
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-orange:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/*Navbar*/
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+/*Header*/
+/* Header */
+.header-section .header-title {
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+    color: var(--dark-color); 
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: transform 0.3s; /* Tambahkan transisi untuk rotasi */
+}
+
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+.header-section .header.img {
+    height: 300px;
+    width: auto;
+}
+/*Portfolio*/
+.portfolio-section .card .card-img-top{
+    height:auto;
+    width: auto;
+
+}
+/*Skills*/
+.skills-section{
+    background-color: #030304;
+}
+.skills-section .progress-bar{
+    width: 100%;
+    height:10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+.skills-section .progress-bar .progress{
+    background-color: var(--primary-color);
+}
+.footer {
+    background-color: black; 
+  }
+  .fade-element {
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  
